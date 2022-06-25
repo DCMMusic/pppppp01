@@ -103,7 +103,7 @@ async def vplay(c: Client, m: Message):
             invitelink = await c.export_chat_invite_link(chat_id)
             if invitelink.startswith("https://t.me/+"):
                 invitelink = invitelink.replace(
-                    "https://t.me/+", "https://t.me/joinchat/"
+                    "https://t.me/+", "https://t.me/gecepayizi/"
                 )
             await user.join_chat(invitelink)
     except UserNotParticipant:
@@ -111,7 +111,7 @@ async def vplay(c: Client, m: Message):
             invitelink = await c.export_chat_invite_link(chat_id)
             if invitelink.startswith("https://t.me/+"):
                 invitelink = invitelink.replace(
-                    "https://t.me/+", "https://t.me/joinchat/"
+                    "https://t.me/+", "https://t.me/gecepayizi/"
                 )
             await user.join_chat(invitelink)
         except UserAlreadyParticipant:
@@ -161,7 +161,7 @@ async def vplay(c: Client, m: Message):
                 await m.reply_photo(
                     photo=image,
                     reply_markup=InlineKeyboardMarkup(buttons),
-                    caption=f"⏩ **Trek Növbəyə əlavə edildi »** `{pos}`\n\n🏷 **Ad:** [{songname}]({link}) | `video`\n⌚ **Müddət:** `{duration}`\n🎧 **İstəyən:** {requester}",
+                    caption=f"⏩ **Mahnı Növbəyə əlavə edildi »** `{pos}`\n\n🏷 **Mahnı adı:** [{songname}]({link}) | `video`\n⌚ **Müddət:** `{duration}`\n🎧 **İstəyən:** {requester}",
                 )
             else:
                 gcname = m.chat.title
@@ -193,7 +193,7 @@ async def vplay(c: Client, m: Message):
                 await m.reply_photo(
                     photo=image,
                     reply_markup=InlineKeyboardMarkup(buttons),
-                    caption=f"🏷 **Ad:** [{songname}]({link}) | `video`\n⌚ **Müddət:** `{duration}`\n🎧 **İstəyən:** {requester}",
+                    caption=f"🏷 **Mahnı adı:** [{songname}]({link}) | `video`\n⌚ **Müddət:** `{duration}`\n🎧 **İstəyən:** {requester}",
                 )
         else:
             if len(m.command) < 2:
@@ -232,7 +232,7 @@ async def vplay(c: Client, m: Message):
                             await m.reply_photo(
                                 photo=image,
                                 reply_markup=InlineKeyboardMarkup(buttons),
-                                caption=f"⏩ **Hissə növbəyə əlavə edildi »** `{pos}`\n\n🏷 **Ad:** [{songname}]({url}) | `video`\n⌚ **Müddət:** `{duration}`\n🎧 **İstəyən:** {requester}",
+                                caption=f"⏩ **Mahnı növbəyə əlavə edildi »** `{pos}`\n\n🏷 **Mahnı adı:** [{songname}]({url}) | `video`\n⌚ **Müddət:** `{duration}`\n🎧 **İstəyən:** {requester}",
                             )
                         else:
                             try:
@@ -253,7 +253,7 @@ async def vplay(c: Client, m: Message):
                                 await m.reply_photo(
                                     photo=image,
                                     reply_markup=InlineKeyboardMarkup(buttons),
-                                    caption=f"🏷 **Ad:** [{songname}]({url}) | `video`\n⌚ **Müddət:** `{duration}`\n🎧 **İstəyən:** {requester}",
+                                    caption=f"🏷 **Mahnı adı:** [{songname}]({url}) | `video`\n⌚ **Müddət:** `{duration}`\n🎧 **İstəyən:** {requester}",
                                 )
                             except Exception as ep:
                                 await loser.delete()
@@ -296,7 +296,7 @@ async def vplay(c: Client, m: Message):
                         await m.reply_photo(
                             photo=image,
                             reply_markup=InlineKeyboardMarkup(buttons),
-                            caption=f"⏩ **Hissə növbəyə əlavə edildi »** `{pos}`\n\n🏷 **Ad:** [{songname}]({url}) | `video`\n⌚ **Müddət:** `{duration}`\n🎧 **İstəyən:** {requester}",
+                            caption=f"⏩ **Hissə növbəyə əlavə edildi »** `{pos}`\n\n🏷 **Mahnı adı:** [{songname}]({url}) | `video`\n⌚ **Müddət:** `{duration}`\n🎧 **İstəyən:** {requester}",
                         )
                     else:
                         try:
@@ -317,7 +317,7 @@ async def vplay(c: Client, m: Message):
                             await m.reply_photo(
                                 photo=image,
                                 reply_markup=InlineKeyboardMarkup(buttons),
-                                caption=f"🏷 **Ad:** [{songname}]({url}) | `video`\n⌚ **Müddət:** `{duration}`\n🎧 **İstəyən:** {requester}",
+                                caption=f"🏷 **Mahnı adı:** [{songname}]({url}) | `video`\n⌚ **Müddət:** `{duration}`\n🎧 **İstəyən:** {requester}",
                             )
                         except Exception as ep:
                             await loser.delete()
@@ -369,7 +369,7 @@ async def vstream(c: Client, m: Message):
             invitelink = await c.export_chat_invite_link(chat_id)
             if invitelink.startswith("https://t.me/+"):
                 invitelink = invitelink.replace(
-                    "https://t.me/+", "https://t.me/joinchat/"
+                    "https://t.me/+", "https://t.me/gecepayizi/"
                 )
             await user.join_chat(invitelink)
     except UserNotParticipant:
@@ -377,14 +377,14 @@ async def vstream(c: Client, m: Message):
             invitelink = await c.export_chat_invite_link(chat_id)
             if invitelink.startswith("https://t.me/+"):
                 invitelink = invitelink.replace(
-                    "https://t.me/+", "https://t.me/joinchat/"
+                    "https://t.me/+", "https://t.me/gecepayizi/"
                 )
             await user.join_chat(invitelink)
         except UserAlreadyParticipant:
             pass
         except Exception as e:
             return await m.reply_text(
-                f"❌ **qoşula edə bilmədi**\n\n**reason**: `{e}`"
+                f"❌ **Qoşula bilmədi**\n\n**reason**: `{e}`"
             )
 
     if len(m.command) < 2:
