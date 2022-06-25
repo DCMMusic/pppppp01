@@ -140,7 +140,7 @@ async def play(c: Client, m: Message):
                 await m.reply_photo(
                     photo=image,
                     reply_markup=InlineKeyboardMarkup(buttons),
-                    caption=f"⏩ **Hissə sıraya əlavə olundu »** `{pos}`\n\n📝 **Ad:** [{songname}]({link}) | `music`\n⌚ **Müddət:** `{duration}`\n📒 **İstəyən:** {requester}",
+                    caption=f"⏩ **Mahnı sıraya əlavə olundu »** `{pos}`\n\n📝 **Mahnı adı:** [{songname}]({link}) | `music`\n⌚ **Müddət:** `{duration}`\n📒 **İstəyən:** {requester}",
                 )
             else:
                 try:
@@ -168,7 +168,7 @@ async def play(c: Client, m: Message):
                     await m.reply_photo(
                         photo=image,
                         reply_markup=InlineKeyboardMarkup(buttons),
-                        caption=f"🏷 **Ad({link}) | `music`\n💬 **Qrup:** `{chat_id}`\n🎧 **İstəyən:** {requester}",
+                        caption=f"🏷 **Mahnı adı({link}) | `music`\n💬 **Qrup:** `{chat_id}`\n🎧 **İstəyən:** {requester}",
                     )
                 except Exception as e:
                     await suhu.delete()
@@ -208,7 +208,7 @@ async def play(c: Client, m: Message):
                             await m.reply_photo(
                                 photo=image,
                                 reply_markup=InlineKeyboardMarkup(buttons),
-                                caption=f"⏩ **Hissə sıraya əlavə olundu »** `{pos}`\n\n📝 **Ad:** [{songname}]({url}) | `music`\n**⌚ Müddət** `{duration}`\n📒 **İstəyən:** {requester}",
+                                caption=f"⏩ **Mahnı sıraya əlavə olundu »** `{pos}`\n\n📝 **Ad:** [{songname}]({url}) | `music`\n**⌚ Müddət** `{duration}`\n📒 **İstəyən:** {requester}",
                             )
                         else:
                             try:
@@ -230,7 +230,7 @@ async def play(c: Client, m: Message):
                                 await m.reply_photo(
                                     photo=image,
                                     reply_markup=InlineKeyboardMarkup(buttons),
-                                    caption=f"🏷 **Ad:** [{songname}]({url}) | `music`\n**⌚ Müddət:** `{duration}`\n🎧 **İstəyən:** {requester}",
+                                    caption=f"🏷 **Mahnı adı:** [{songname}]({url}) | `music`\n**⌚ Müddət:** `{duration}`\n🎧 **İstəyən:** {requester}",
                                 )
                             except Exception as ep:
                                 await suhu.delete()
@@ -246,7 +246,7 @@ async def play(c: Client, m: Message):
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
             if search == 0:
-                await suhu.edit("❌ **Nəticə tapılmadı...**")
+                await suhu.edit("❌ **Nəticə tapılmadı.**")
             else:
                 songname = search[0]
                 title = search[0]
@@ -269,7 +269,7 @@ async def play(c: Client, m: Message):
                         await m.reply_photo(
                             photo=image,
                             reply_markup=InlineKeyboardMarkup(buttons),
-                            caption=f"⏩ **Hissə siyahıya əlavə edildi »** `{pos}`\n\n📝 **Ad:** [{songname}]({url}) | `music`\n**⌚ Müddət:** `{duration}`\n📒 **İstəyən:** {requester}",
+                            caption=f"⏩ **Mahnı siyahıya əlavə edildi »** `{pos}`\n\n📝 **Mahnı adı:** [{songname}]({url}) | `music`\n**⌚ Müddət:** `{duration}`\n📒 **İstəyən:** {requester}",
                         )
                     else:
                         try:
@@ -289,7 +289,7 @@ async def play(c: Client, m: Message):
                             await m.reply_photo(
                                 photo=image,
                                 reply_markup=InlineKeyboardMarkup(buttons),
-                                caption=f"🏷 **Ad:** [{songname}]({url}) | `music`\n**⌚ Müddət:** `{duration}`\n🎧 **İstəyən:** {requester}",
+                                caption=f"🏷 **Mahnı adı:** [{songname}]({url}) | `music`\n**⌚ Müddət:** `{duration}`\n🎧 **İstəyən:** {requester}",
                             )
                         except Exception as ep:
                             await suhu.delete()
