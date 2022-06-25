@@ -61,7 +61,7 @@ async def start_(client: Client, message: Message):
         f"""● **Salam 🙋🏻‍♀️ {message.from_user.mention()} **\n
 ● **Mən səsli söhbətlərdə musiqi botam 🥰**
 
-● **Hər hansı bir problemlə qarşılaşsanız @AOBTEAM qrupumuza gəlib yaza bilərsiniz!**
+● **Hər hansı bir problemlə qarşılaşsanız @gecepayizi qrupumuza gəlib yaza bilərsiniz!**
 
 ● **📚 Əmrlər butona basıb bütün əmrləri öyrənin ⬇️**
 """,
@@ -70,19 +70,19 @@ async def start_(client: Client, message: Message):
                 [
                     InlineKeyboardButton(
                         "Məni qrupa əlavə et 🥳",
-                        url=f"https://t.me/Bayramova_Music_Bot?startgroup=true",
+                        url=f"https://t.me/HellQueen_MusicBot?startgroup=true",
                     )
                 ],
                 [
                     InlineKeyboardButton("📚 Əmrlər", callback_data="cbcmds"),
-                    InlineKeyboardButton("😍 Sahibəm", url=f"https://t.me/Bayramova_o5"),
+                    InlineKeyboardButton("😍 Sahibəm", url=f"https://t.me/Queenn_nnnnnn"),
                 ],
                 [
                     InlineKeyboardButton(
-                        "💬 Söhbət Qrupum", url=f"https://t.me/AOBTEAM"
+                        "💬 Söhbət Qrupum", url=f"https://t.me/gecepayizi"
                     ),
                     InlineKeyboardButton(
-                        "🥰 Kanalım", url=f"https://t.me/Xatireler_ebedidir"
+                        "🥰 Kanalım", url=f"https://t.me/Rahid_44"
                     ),
                 ],
             ]
@@ -103,9 +103,9 @@ async def alive(c: Client, message: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("📣 Dəstək", url=f"https://t.me/Kinggame98"),
+                InlineKeyboardButton("📣 Dəstək", url=f"https://t.me/gecepayizi"),
                 InlineKeyboardButton(
-                    "🗯️ Məlumat", url=f"https://t.me/Xatireler_ebedidir"
+                    "🗯️ Məlumat", url=f"https://t.me/Rahid_44"
                 ),
             ]
         ]
@@ -170,11 +170,11 @@ async def new_chat(c: Client, m: Message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("📣 Məlumat", url=f"https://t.me/Xatireler_ebedidir"),
-                            InlineKeyboardButton("🗯️ Dəstək", url=f"https://t.me/AOBTEAM")
+                            InlineKeyboardButton("📣 Məlumat", url=f"https://t.me/Rahid_44"),
+                            InlineKeyboardButton("🗯️ Dəstək", url=f"https://t.me/gecepayizi")
                         ],
                         [
-                            InlineKeyboardButton("🎙 Asistan", url=f"https://t.me/Bayramova_Musiqi")
+                            InlineKeyboardButton("🎙 Asistan", url=f"https://t.me/Queenn_nnnnn")
                         ]
                     ]
                 )
