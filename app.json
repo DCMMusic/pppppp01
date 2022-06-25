@@ -12,8 +12,8 @@
         "pyrogram"
     ],
     "website": "https://t.me/Xatireler_ebedidir",
-    "repository": "https://github.com/Rahid_2003/Rahid-MP3",
-    "success_url": "https://t.me/Bayramova_o5",
+    "repository": "https://github.com/Rahid2003/HellQueen",
+    "success_url": "https://t.me/Queenn_nnnnnn",
     "env": {
         "API_ID": {
             "description": "My.telegram'dan uygulama apı-hash.org/apps",
@@ -50,32 +50,32 @@
         "SUDO_USERS": {
             "description": "sudo üye listesine eklenecek kullanıcı kimliği listesi veya sadece id doldurun",
             "required": true,
-            "value": "1485534068"
+            "value": "5437595807"
         },
         "UPSTREAM_REPO": {
             "description": "Bu, güncelleme özelliği için gereklidir, eğer çatallı repo dağıttıysanız, olduğu gibi bırakmazsanız, çatallı repo bağlantınızı buraya koyun",
             "required": true,
-            "value": "https://github.com/Rahid_2003/Rahid-MP3"
+            "value": "https://github.com/Rahid2003/HellQueen"
         },
         "GROUP_SUPPORT": {
             "description": "Grup kullanıcı adı @ olmadan yazınız.",
             "required": true,
-            "value": "AOBTEAM"
+            "value": "gecepayizi"
         },
         "UPDATES_CHANNEL": {
             "description": "Kanal kullanıcı adı @ olmadan yazınız.",
             "required": true,
-            "value": "Xatireler_ebedidir"
+            "value": "Rahid_44"
         },
         "OWNER_NAME": {
             "description": "Kendi kullanıcı adınız @ olmadan yazınız",
             "required": true,
-            "value": "Bayramova_o5"
+            "value": "Queenn_nnnnnn"
         },
         "ALIVE_NAME": {
             "description": "telgraf hesabınızın takma adı/adıyla doldurun",
             "required": true,
-            "value": "Bayramova_o5"
+            "value": "Queenn_nnnnnn"
         }
     },
     "addons": [],
