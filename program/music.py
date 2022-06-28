@@ -107,7 +107,7 @@ async def play(c: Client, m: Message):
             pass
         except Exception as e:
             return await m.reply_text(
-                f"❌ **Asistan qoşula bilmədi😐**\n\n**reason**: `{e}`"
+                f"❌ **Asistan qoşula bilmədi😑**\n\n**reason**: `{e}`"
             )
     if replied:
         if replied.audio or replied.voice:
