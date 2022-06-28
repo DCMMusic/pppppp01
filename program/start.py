@@ -58,31 +58,31 @@ async def _human_time_duration(seconds):
 async def start_(client: Client, message: Message):
     await message.reply_sticker("CAACAgQAAxkBAAI8bmKIvgnlJyCrq9HIxSvCZCbm5CEjAAIaEAACpvFxHg-Z648-SCRWJAQ")
     await message.reply_text(
-        f"""● **Salam 🙋🏻‍♀️ {message.from_user.mention()} **\n
-● **Mən səsli söhbətlərdə musiqi botam 🥰**
+        f"""● **Salam 🙋 {message.from_user.mention()} **\n
+● **Mən səsli söhbətlərdə oxuyan musiqi botam 🥰**
 
-● **Hər hansı bir problemlə qarşılaşsanız @gecepayizi qrupumuza gəlib yaza bilərsiniz!**
+● **Hər hansı bir problemlə qarşılaşsanız @karabakhTeamm qrupumuza gəlib yaza bilərsiniz!**
 
-● **📚 Əmrlər butona basıb bütün əmrləri öyrənin ⬇️**
+● **🕹️ Əmrlər butona basıb bütün əmrləri öyrənin ⬇️**
 """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "Məni qrupa əlavə et 🥳",
-                        url=f"https://t.me/HellQueen_MusicBot?startgroup=true",
+                        "Məni qrupa əlavə et ☺️",
+                        url=f"https://t.me/kafkazmusicBot?startgroup=true",
                     )
                 ],
                 [
-                    InlineKeyboardButton("📚 Əmrlər", callback_data="cbcmds"),
-                    InlineKeyboardButton("😍 Sahibəm", url=f"https://t.me/Queenn_nnnnnn"),
+                    InlineKeyboardButton("🕹️ Əmirlər", callback_data="cbcmds"),
+                    InlineKeyboardButton("🧑‍💻 Sahibəm", url=f"https://t.me/Thagiyevvvv"),
                 ],
                 [
                     InlineKeyboardButton(
-                        "💬 Söhbət Qrupum", url=f"https://t.me/gecepayizi"
+                        "💬 Söhbət Qrupum", url=f"https://t.me/karabakhTeamm"
                     ),
                     InlineKeyboardButton(
-                        "🥰 Kanalım", url=f"https://t.me/Rahid_44"
+                        "🥂 Kanalım", url=f"https://t.me/RiyaddBlog"
                     ),
                 ],
             ]
@@ -103,15 +103,15 @@ async def alive(c: Client, message: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("📣 Dəstək", url=f"https://t.me/gecepayizi"),
+                InlineKeyboardButton("📣 Dəstək", url=f"https://t.me/karabakhTeamm"),
                 InlineKeyboardButton(
-                    "🗯️ Məlumat", url=f"https://t.me/Rahid_44"
+                    "🗯️ Məlumat", url=f"https://t.me/Thagiyevvvv"
                 ),
             ]
         ]
     )
 
-    alive = f"**• Salam {message.from_user.mention()} {BOT_NAME}**\n\n🧑🏼‍💻 Sahibəm: [{ALIVE_NAME}](https://t.me/{OWNER_NAME})\n👾 Bot versiyası: `v{__version__}`\n🔥 Pragram versiyası: `{pyrover}`\n🐍 Python versiyası: `{__python_version__}`\n✨ PyTgCalls versiyası: `{pytover.__version__}`\n🆙 İşləmək durumu: `{uptime}`\n\n❤ **Məni qrupa əlavə etdiyiniz üçün təşəkkürlər 😍**"
+    alive = f"**• Salam {message.from_user.mention()} {BOT_NAME}**\n\n🧑🏼‍💻 Sahibəm: [{ALIVE_NAME}](https://t.me/{OWNER_NAME})\n👾 Bot versiyası: `v{__version__}`\n🔥 Pragram versiyası: `{pyrover}`\n🐍 Python versiyası: `{__python_version__}`\n✨ PyTgCalls versiyası: `{pytover.__version__}`\n🆙 İşləmək durumu: `{uptime}`\n\n❤ **Məni qrupa əlavə etdiyiniz üçün təşəkkürlər ☺️**"
 
     await c.send_photo(
         chat_id,
@@ -164,17 +164,17 @@ async def new_chat(c: Client, m: Message):
     for member in m.new_chat_members:
         if member.id == bot_id:
             return await m.reply(
-                "**❤️ Məni qrupa əlavə etdiyiniz üçün təşəkkürlər 🥰!**\n\n"
+                "**❤️ Məni qrupa əlavə etdiyiniz üçün təşəkkürlər ☺️!**\n\n"
                 "**Məni qrupda admin et sonra  /katil əmr ilə Asistanı qrupa dəvət edin . . !\n\n**"
-                "**Bütün bunları etdikdən sonra  /reload Əmri istifadə edin və hərşey hazır ! Botu istifadə edə bilərsiniz 🥰**",
+                "**Bütün bunları etdikdən sonra  /reload Əmri istifadə edin və hərşey hazırdı ! Botu istifadə edə bilərsiniz 🐊**",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("📣 Məlumat", url=f"https://t.me/Rahid_44"),
-                            InlineKeyboardButton("🗯️ Dəstək", url=f"https://t.me/gecepayizi")
+                            InlineKeyboardButton("📣 Məlumat", url=f"https://t.me/RiyaddBlog"),
+                            InlineKeyboardButton("🗯️ Dəstək", url=f"https://t.me/KarabakhTeamm")
                         ],
                         [
-                            InlineKeyboardButton("🎙 Asistan", url=f"https://t.me/Queenn_nnnnn")
+                            InlineKeyboardButton("🎙 Asistan", url=f"https://t.me/KafkazMusicAsistan")
                         ]
                     ]
                 )
@@ -196,5 +196,5 @@ async def chat_watcher_func(_, message: Message):
         except Exception:
             return
         await message.reply_text(
-            f"👮🏼 (> {suspect} <)\n\n**Gbanned** user detected, that user has been gbanned by sudo user and was blocked from this Chat !\n\n🚫 **Reason:** potential spammer and abuser."
+            f"👮🏼 (> {suspect} <)\n\n**Gbanned** user detected, that user has been gbanned by sudo user and was blocked from this Chat !\n\n😑 **Reason:** potential spammer and abuser."
         )
