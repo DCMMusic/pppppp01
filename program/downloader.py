@@ -40,7 +40,7 @@ ydl_opts = {
 is_downloading = False
 
 
-@Client.on_message(command(["bul", f"bul@{bn}"]) & ~filters.edited)
+@Client.on_message(command(["song", f"song@{bn}"]) & ~filters.edited)
 def song(_, message):
     global is_downloading
     query = " ".join(message.command[1:])
@@ -102,7 +102,7 @@ def song(_, message):
 
 
 @Client.on_message(
-    command(["ara", f"ara@{bn}", "video", f"video@{bn}"]) & ~filters.edited
+    command(["vsong", f"vsong@{bn}", "video", f"video@{bn}"]) & ~filters.edited
 )
 async def vsong(client, message):
     global is_downloading
