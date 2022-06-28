@@ -19,29 +19,29 @@ async def cbstart(_, query: CallbackQuery):
     await query.answer("home start")
     await query.edit_message_text(
         f"""● **Salam [{query.message.chat.first_name}](tg://user?id={query.message.chat.id}) **\n
-● **Mən səsli söhbətlərdə musiqi botam 🥰**
+● **Mən səsli söhbətlərdə musiqi botam ☺️**
 
-● **Hər hansı problemlə qarşılaşsanız @gecepayizi qrupumuza gəlib bildirə bilərsiniz!**
+● **Hər hansı problemlə qarşılaşsanız @karabakhteamm qrupumuza gəlib bildirə bilərsiniz!**
 
 ● **📚 Əmrlər butonuna klikləyib bütün əmrləri öyrənin ⬇️**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "Məni qrupa əlavə et 🥳",
+                        "Məni qrupa əlavə et 🐊",
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                     )
                 ],
                 [
-                    InlineKeyboardButton("📚 Əmrlər", callback_data="cbcmds"),
-                    InlineKeyboardButton("😍 Sahibəm", url=f"https://t.me/{OWNER_NAME}"),
+                    InlineKeyboardButton("🕹️ Əmrlər", callback_data="cbcmds"),
+                    InlineKeyboardButton("🧑‍💻 Sahibəm", url=f"https://t.me/{OWNER_NAME}"),
                 ],
                 [
                     InlineKeyboardButton(
                         "💬 Söhbət Qrupum", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
-                        "🥰 Kanalım", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "Kanalım🐊", url=f"https://t.me/{UPDATES_CHANNEL}"
                     ),
                 ],
             ]
@@ -85,8 +85,8 @@ async def cbcmds(_, query: CallbackQuery):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("📚 Sahibənin əmrləri ", callback_data="cbsudo"),
-                    InlineKeyboardButton("📚 Əsas əmrlər", callback_data="cbbasic")
+                    InlineKeyboardButton("🧑‍💻 Sahibənin əmrləri ", callback_data="cbsudo"),
+                    InlineKeyboardButton("🕹️ Əsas əmrlər", callback_data="cbbasic")
                 ],[
                     InlineKeyboardButton("🔙  Geri  🔙", callback_data="cbstart")
                 ],
@@ -99,10 +99,10 @@ async def cbcmds(_, query: CallbackQuery):
 async def cbbasic(_, query: CallbackQuery):
     await query.answer("basic commands")
     await query.edit_message_text(
-        f"""📚 **Əsas əmrlər :
+        f"""🕹️ **Əsas əmrlər :
 
-» /bul => Musiqi yüklə.
-» /ara => Video yüklə.
+» /song => Musiqi yüklə.
+» /vsong => Video yüklə.
 » /play => Musiqi oynat.
 » /vplay => Video oynat.
 » /lyrics => Mahnı sözlərini tap.
@@ -130,10 +130,10 @@ Məlumat: Bu əmrləri hərkəs istifadə edə bilər ☑️
 async def cbadmin(_, query: CallbackQuery):
     await query.answer("admin commands")
     await query.edit_message_text(
-        f"""📚 **Əsas əmrlər :
+        f"""🕹️ **Əsas əmrlər :
 
-» /bul => Musiqi yüklə.
-» /ara => Video yüklə.
+» /song => Musiqi yüklə.
+» /vsong => Video yüklə.
 » /play => Musiqi oynat.
 » /vplay => Video oynat.
 » /lyrics => Mahnı sözlərini tap.
@@ -160,7 +160,7 @@ Məlumat: Bu əmrləri hərkəs istifadə edə bilər ☑️
 async def cbsudo(_, query: CallbackQuery):
     await query.answer("sudo commands")
     await query.edit_message_text(
-        f"""📚 **Sahibənin əmrləri :
+        f"""🧑‍💻 **Sahibənin əmrləri :
 
 Qeyd: Bu əmrləri sadəcə bot sahibəsi istifadə edə bilər!
 
