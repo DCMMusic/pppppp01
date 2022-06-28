@@ -16,7 +16,7 @@ async def ytsearch(_, message: Message):
     for i in range(5):
         try:
             text += f"🏷 **Ad:** __{results[i]['title']}__\n"
-            text += f"⏱ **Müddət:** `{results[i]['duration']}`\n"
+            text += f"⏱️ **Vaxt:** `{results[i]['duration']}`\n"
             text += f"👀 **Baxış sayı:** `{results[i]['views']}`\n"
             text += f"📣 **Kanal:** {results[i]['channel']}\n"
             text += f"🔗 **Link:** https://www.youtube.com{results[i]['url_suffix']}\n\n"
