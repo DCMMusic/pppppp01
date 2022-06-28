@@ -103,7 +103,7 @@ async def vplay(c: Client, m: Message):
             invitelink = await c.export_chat_invite_link(chat_id)
             if invitelink.startswith("https://t.me/+"):
                 invitelink = invitelink.replace(
-                    "https://t.me/+", "https://t.me/gecepayizi/"
+                    "https://t.me/+", "https://t.me/karabakhTeamm/"
                 )
             await user.join_chat(invitelink)
     except UserNotParticipant:
@@ -111,7 +111,7 @@ async def vplay(c: Client, m: Message):
             invitelink = await c.export_chat_invite_link(chat_id)
             if invitelink.startswith("https://t.me/+"):
                 invitelink = invitelink.replace(
-                    "https://t.me/+", "https://t.me/gecepayizi/"
+                    "https://t.me/+", "https://t.me/KarabakhTeamm/"
                 )
             await user.join_chat(invitelink)
         except UserAlreadyParticipant:
@@ -207,7 +207,7 @@ async def vplay(c: Client, m: Message):
                 Q = 720
                 amaze = HighQualityVideo()
                 if search == 0:
-                    await loser.edit("❌ **Nəticə tapılmadı.**")
+                    await loser.edit("😑 **Nəticə tapılmadı.**")
                 else:
                     songname = search[0]
                     title = search[0]
@@ -220,7 +220,7 @@ async def vplay(c: Client, m: Message):
                     image = await thumb(thumbnail, title, userid, ctitle)
                     veez, ytlink = await ytdl(url)
                     if veez == 0:
-                        await loser.edit(f"❌ yt-dl problemlər aşkar edilib\n\n» `{ytlink}`")
+                        await loser.edit(f"😑 yt-dl problemlər aşkar edilib\n\n» `{ytlink}`")
                     else:
                         if chat_id in QUEUE:
                             pos = add_to_queue(
@@ -257,7 +257,7 @@ async def vplay(c: Client, m: Message):
                                 )
                             except Exception as ep:
                                 await loser.delete()
-                                await m.reply_text(f"🚫 error: `{ep}`")
+                                await m.reply_text(f"😑 error: `{ep}`")
 
     else:
         if len(m.command) < 2:
@@ -271,7 +271,7 @@ async def vplay(c: Client, m: Message):
             Q = 720
             amaze = HighQualityVideo()
             if search == 0:
-                await loser.edit("❌ **Nəticə tapılmadı.**")
+                await loser.edit("😑 **Nəticə tapılmadı.**")
             else:
                 songname = search[0]
                 title = search[0]
@@ -284,7 +284,7 @@ async def vplay(c: Client, m: Message):
                 image = await thumb(thumbnail, title, userid, ctitle)
                 veez, ytlink = await ytdl(url)
                 if veez == 0:
-                    await loser.edit(f"❌ yt-dl problemlər aşkar edilib\n\n» `{ytlink}`")
+                    await loser.edit(f"😑 yt-dl problemlər aşkar edilib\n\n» `{ytlink}`")
                 else:
                     if chat_id in QUEUE:
                         pos = add_to_queue(chat_id, songname, ytlink, url, "Video", Q)
@@ -369,7 +369,7 @@ async def vstream(c: Client, m: Message):
             invitelink = await c.export_chat_invite_link(chat_id)
             if invitelink.startswith("https://t.me/+"):
                 invitelink = invitelink.replace(
-                    "https://t.me/+", "https://t.me/gecepayizi/"
+                    "https://t.me/+", "https://t.me/karabakhTeamm/"
                 )
             await user.join_chat(invitelink)
     except UserNotParticipant:
@@ -377,7 +377,7 @@ async def vstream(c: Client, m: Message):
             invitelink = await c.export_chat_invite_link(chat_id)
             if invitelink.startswith("https://t.me/+"):
                 invitelink = invitelink.replace(
-                    "https://t.me/+", "https://t.me/gecepayizi/"
+                    "https://t.me/+", "https://t.me/KarabakhTeamm/"
                 )
             await user.join_chat(invitelink)
         except UserAlreadyParticipant:
